@@ -1,0 +1,1029 @@
+body{
+    margin: 0;
+    text-transform: capitalize;
+}
+*{
+    text-transform: capitalize;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#sec1{
+    background-image: url(image/imageback1.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+.header{
+    width: 100%;
+    height: 100%;
+    background: #080808a3;
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+.header .out{
+    width: 100%;
+    background: white;
+    height: 63px;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+}
+.head{
+    width: 80%;
+    height: 63px;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.head img{
+    width: 90px;
+    height: 70%;
+    margin: 12px 15px;
+    float: left;
+}
+.head ul{
+    float: right;
+}
+.head ul li{
+    display: inline-block;
+    text-decoration: none;
+}
+.head ul li a{
+    color: black;
+    padding: 10px;
+    display: block;
+}
+.head ul li a:hover{
+    color: #ff7415;
+}
+/* __________________________________________________________________________________________________________ */
+.header-main{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header-main .p1{
+    font-size: 45px;
+    font-weight: bold;
+    color: #ff7415;
+    margin: 0;
+    font-family: cursive;
+}
+.header-main .p2{
+    color: white;
+    margin-top: 0;
+    font-size: 13px;
+    font-family: cursive;
+}
+.header-main button{
+    margin-top: 18px;
+    padding: 5px 15px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.header-main .but1{
+    border: 3px solid transparent;
+}
+.header-main .but1:hover{
+    border: 3px solid transparent;
+    background: #ff7415;
+    color: white;
+}
+.header-main .but2{
+    border: 3px solid #ff7415;
+    background: transparent;
+    color: white;
+}
+.header-main .but2:hover{
+    border: 3px solid #ff7415;
+    background: transparent;
+    color: white;
+    background: white;
+    border-color: white;
+    color: black;
+}
+/* ___________________________________________________________________________________________________________ */
+#sec2{
+    padding: 40px 0 100px 0;
+}
+#sec2 .title{
+    position: relative;
+}
+#sec2 .title-p1{
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    font-size: 75px;
+    color: #7e4d1e;
+}
+#sec2 .title-p2{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 410px;
+    height: 3px;
+    background: #ff7415;
+    border-radius: 50%;
+}
+#sec2 .main{
+    margin: 35px 0 0 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+}
+#sec2 .main div{
+    width: 30%;
+    height: 270px;
+    position: absolute;
+    text-align: center;
+    border: 1px solid gray;
+    padding: 25px 5px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+#sec2 .main div::before{
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: .3s;
+}
+#sec2 .main div:hover::before{
+    background-color: #ffaf78;
+    width: 100%;
+    transition: 1s;
+}
+#sec2 .main div:hover i{
+    color: white;
+    transition: 1s;
+}
+#sec2 .main div:hover .main-p2{
+    color: black;
+    transition: 1s;
+}
+#sec2 .main div:hover a{
+    color :white;
+    transition: 1s;
+}
+#sec2 .main div i{
+    padding-top: 20px;
+    font-size: 28px;
+    color: #ff7415;
+    transition: .3s;
+}
+#sec2 .main .two{
+    left: 50%;
+    transform: translateX(-50%);
+}
+#sec2 .main .three{
+    right: 0;
+}
+#sec2 .main-p1{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+#sec2 .main-p2{
+    color: gray;
+    line-height: 1.7;
+    margin-top: -15px;
+    transition: .3s;
+}
+#sec2 div a{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ff7415;
+    transition: .3s;
+}
+/* ___________________________________________________________________________________________________________ */
+#sec3{
+    background-color: #ffd8bc;
+    padding: 30px 0 80px 0;
+}
+#sec3 .title{
+    position: relative;
+    z-index: 1;
+}
+#sec3 .title-p1{
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    font-size: 75px;
+    color: #7e4d1e;
+}
+#sec3 .title span{
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px;
+    height: 3px;
+    background: #ff7415;
+    border-radius: 50%;
+}
+#sec3 .main{
+    margin-top: 30px;
+    z-index: 1;
+    position: relative;
+}
+#sec3 .main .out{
+    width: 80%;
+    height: 340px;
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+#sec3 .main .x{
+    width: 28%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    padding: 15px;
+}
+#sec3 .main .one{
+    width: 28%;
+    height: 300px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+#sec3 .main .two{
+    left: 50%;
+    transform: translateX(-50%);
+}
+#sec3 .main .three{
+    right: 0;
+}
+#sec3 .main .four{
+    width: 28%;
+    height: 300px;
+    padding: 15px;
+}
+#sec3 .main .five{
+    left: 50%;
+    transform: translateX(-50%);
+}
+#sec3 .main .six{
+    right: 0;
+}
+#sec3 .main img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+#sec3 .main .black{
+    width: 100%;
+    height: 100%;
+    background-color: #0000007a;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    text-align: center;
+    transition: .5s;
+    border-radius: 1px;
+}
+#sec3 .main .out div:hover .black{
+    opacity: 1;
+    transition: 1s;
+}
+#sec3 .main .black .black-p1{
+    font-size: 35px;
+    font-weight: bold;
+    color: #ff7415;
+    margin-bottom: 0;
+    margin-top: 120px;
+    transition: .5s;
+}
+#sec3 .main .out div:hover .black-p1{
+    margin-top: 100px;
+    transition: 1s;
+}
+#sec3 .main .black .black-p2{
+    color: white;
+    margin: 0px 0 10px;
+}
+#sec3 .main .black i{
+    padding: 7px;
+    background: white;
+    color: #ff7415;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/* ___________________________________________________________________________________________________________ */
+#sec4{
+    position: relative;
+    padding: 30px 0;
+}
+#sec4 .title{
+    position: relative;
+}
+#sec4 .title-p1{
+    font-weight: bold;
+    text-align: center;
+    margin:0;
+    font-size: 50px;
+    color: #7e4d1e;
+}
+#sec4 .title span{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 3px;
+    background: #ff7415;
+    border-radius: 50%;
+}
+#sec4 .main{
+    margin-top: 30px;
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    overflow: auto;
+}
+#sec4 .main div{
+    border-radius: 15px;
+    padding: 10px 10px 10px 15px;
+    float: left;
+    width: 30%;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    margin-bottom: 25px;
+    position: relative;
+}
+#sec4 .main div::after{
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    bottom: 50%;
+    right: 50%;
+    background-color: #ff7415;
+    opacity: .3;
+    border-radius: 15px;
+    transition: .3s;
+}
+#sec4 .main div:hover:after{
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    right: 0%;
+    transition: .7s;
+}
+#sec4 .main .x{
+    margin: 0 5%;
+}
+#sec4 .main i{
+    font-size: 25px;
+    font-weight: bold;
+    color: #ff7415;
+    width: 25px;
+    padding-right: 10px;
+}
+#sec4 .main .main-p1{
+    margin: 0;
+    font-size: 25px;
+    padding-left: 5px;
+    font-weight: bold;
+}
+#sec4 .main .main-p2{
+    margin-bottom: 0;
+    padding-left: 35px;
+    color: gray;
+}
+/* ___________________________________________________________________________________________________________ */
+#sec5{
+    background-color: #ffd8bc;
+    padding: 10px 0 80px 0;
+}
+#sec5 .title{
+    position: relative;
+}
+#sec5 .title-p1{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 50px;
+    color: #7e4d1e;
+}
+#sec5 .title span{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110px;
+    height: 3px;
+    background: #ff7415;
+    border-radius: 50%;
+}
+#sec5 .main{
+    overflow: auto;
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+#sec5 .main .left{
+    width: 60%;
+    float: left;
+}
+#sec5 .main .left .content{
+    text-align: center;
+    color: gray;
+    margin: 0;
+    padding: 0 25px 0 0;
+}
+#sec5 .main .left .list i{
+    
+    color: #ff7415;
+    padding: 0 7px;
+
+}
+#sec5 .main .left .list p{
+    padding-left: 20px;
+}
+#sec5 .main .right{
+    width: 40%;
+    height: 380px;
+    float: left;
+    position: relative;
+}
+#sec5 .main img{
+    width: 86%;
+    height: 95%;
+    margin-top: 0;
+    float: right;
+    border-radius: 10px;
+    margin-right: 7%;
+}
+#sec5 .main .right .center{
+    width: 8px;
+    height: 8px;
+    background-color: #ff7415;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #ff7415;
+}
+#sec5 .main .right .left{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-200%);
+    border: 2px solid white;
+}
+#sec5 .main .right .left:hover{
+    background-color: #ff7415;
+    border: 2px solid #ff7415;
+}
+#sec5 .main .right .right{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(100%);
+    border: 2px solid white;
+}
+#sec5 .main .right .right:hover{
+    background-color: #ff7415;
+    border: 2px solid #ff7415;
+}
+/* ___________________________________________________________________________________________________________ */
+#sec6{
+    width: 100%;
+    height: 50vh;
+    background: url(image/books.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+}
+#sec6::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: #00000085;
+}
+#sec6 .out{
+    overflow: auto;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+#sec6 .out div{
+    width: 20%;
+    position: relative;
+    z-index: 2;
+    float: left;
+    text-align: center;
+}
+#sec6 div i{
+    color: #ff7415;
+    font-size: 25px;
+    font-weight: bold;
+}
+#sec6 div h1{
+    margin: 0;
+    padding-top: 15px;
+    color: white;
+}
+#sec6 div p{
+    margin: 5px;
+    color: white;
+}
+/* ___________________________________________________________________________________________________________ */
+#sec7{
+    padding-top: 30px;
+}
+#sec7 .title{
+    position: relative;
+}
+#sec7 .title-p1{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 50px;
+    color: #7e4d1e;
+}
+#sec7 .title span{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    height: 3px;
+    background: #ff7415;
+    border-radius: 50%;
+}
+#sec7 .second{
+    width: 80%;
+    height: fit-content;
+    overflow: auto;
+    margin: 40px auto;
+    position: relative;
+}
+#sec7 .second .main{
+    width: 30%;
+    border-radius: 7px;
+    text-align: center;
+    border: 2px solid gray;
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#sec7 .second .main::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 100%;
+    bottom: 100%;
+    background-color: #ff7415;
+    opacity: .7;
+    z-index: -1;
+    transition: .3s;
+    border-radius: 6px;
+}
+#sec7 .second .main:hover{
+    color: white;
+}
+#sec7 .second .main:hover::after{
+    right: 0%;
+    bottom: 0%;
+    transition: 1s;
+}
+#sec7 .second-one{
+    float: left;
+}
+#sec7 .second-two{
+    float: left;
+    margin-left: 5%;
+}
+#sec7 .second-three{
+    float: right;
+}
+#sec7 .second .p1{
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    color: #ff7415;
+    transition: .3s;
+}
+#sec7 .second .main:hover .p1{
+    color: white;
+    transition: 1s;
+}
+#sec7 .second .circle{
+    background-size: cover;
+    width: 100px;
+    height: 110px;
+    margin-left: 50%;
+    margin-top: -10px;
+    transform: translate(-50%, 0);
+    border-radius: 50%;
+    outline: 2px solid #ff7415;
+    outline-offset: 2px;
+    transition: .3s;
+    position: relative;
+}
+#sec7 .second .circle img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    opacity: .9;
+}
+#sec7 .second .main:hover .circle{
+    width: 100px;
+    height: 100px;
+    outline: 2px solid white;
+    transition: 1s;
+}
+#sec7 .second .circle-p1{
+    font-size: 34px;
+    font-weight: bold;
+    padding-top: 15px;
+    margin: 0;
+    position: relative;
+}
+#sec7 .second .circle-p2{
+    margin: 0;
+    position: relative;
+}
+#sec7 .second .main >p{
+    transition: .3s;
+}
+#sec7 .second .main:hover >p{
+    color: white;
+    transition: 1s;
+}
+#sec7 .second .p2{
+    line-height: 1.4;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 2px;
+    transition: .3s;
+}
+#sec7 .second .p5{
+    padding-bottom: 15px;
+}
+#sec7 .second p i{
+    color: #ff7415;
+    padding-right: 5px;
+    transition: .3ss;
+}
+#sec7 .second .main:hover i{
+    color:white;
+    transition: 1s;
+}
+#sec7 .second .main:hover .p2{
+    padding-top: 30px;
+    transition: 1s;
+}
+#sec7 .second button{
+    background: #ff7415;
+    padding: 5px 20px;
+    margin: -10px 0 15px 0;
+    color: white;
+    border-radius: 18px;
+    border: none;
+    font-size: 16px;
+    transition: .3s;
+    cursor: pointer;
+}
+#sec7 .second .main:hover button{
+    background-color: white;
+    color: #ff7415;
+    transition: 1s;
+}
+/* ___________________________________________________________________________________________________________ */
+#sec8{
+    width: 100%;
+    height: 50vh;
+    background: url(image/back6.jfif);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 0;
+}
+#sec8::after{
+    position: absolute;
+    z-index: 1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: #00000073;
+}
+#sec8 .out{
+    overflow: auto;
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+#sec8 .out >div{
+    width: 45%;
+    position: relative;
+    z-index: 2;
+}
+#sec8 .left{
+    float: left;
+}
+#sec8 .right{
+    float: right;
+}
+#sec8 div .top{
+    position: relative;
+}
+#sec8 div img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+#sec8 div .title{
+    position: absolute;
+    top: -22px;
+    left: 90px;
+    font-size: 25px;
+    color: #ff7415;
+}
+#sec8 div .p1{
+    position: absolute;
+    top: 25px;
+    left: 100px;
+    color: white;
+}
+#sec8 div .p2{
+    color: white;
+}
+/* ___________________________________________________________________________________________________________ */
+#sec9{
+    position: relative;
+    padding: 30px 0 100px 0;
+}
+#sec9 .title{
+    position: relative;
+}
+#sec9 .title-p1{
+    font-weight: bold;
+    text-align: center;
+    margin:0;
+    font-size: 50px;
+    color: #7e4d1e;
+}
+#sec9 .title span{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 3px;
+    background: #ff7415;
+    border-radius: 50%;
+}
+#sec9 .main{
+    width: 70%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    overflow: auto;
+    margin-top: 50px;
+}
+#sec9 .main > div{
+    width: 30%;
+    background: #d5d5d5;
+    padding: 20px;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    z-index: -2;
+}
+#sec9 .main > div::after{
+    position: absolute;
+    content: "";
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000038;
+    opacity: 0;
+    transform: .3s;
+}
+#sec9 .main > div:hover:after{
+    top: 0;
+    opacity: 1;
+    transition: 1s;
+}
+#sec9 .main .two{
+    margin: 0 5%;
+}
+#sec9 .main .three{
+    float: right;
+}
+#sec9 .main div .out{
+    position: relative;
+}
+#sec9 .main >div:hover .out{
+    background:#ff741542;
+    transition: 1s;
+}
+#sec9 .main img{
+    width: 100%;
+    height: 250px;
+    position: relative;
+    z-index: -1;
+}
+#sec9 .main div .icons{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: white;
+    padding: 3px 6px;
+    opacity: 0;
+    transition: .3s;
+}
+#sec9 .main div:hover .icons{
+    opacity: 1;
+    transition: 1s;
+}
+#sec9 .main div .icons i{
+    display: block;
+    line-height: 30px;
+    font-size: 18px;
+    color: #ff7415;
+}
+#sec9 .main .p1{
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff7415;
+    margin: 0;
+    position: relative;
+    z-index: 5;
+    transition: .3s;
+}
+#sec9 .main > div:hover .p1{
+    color: white;
+    transition: 1s;
+}
+#sec9 .main .p2{
+    text-align: center;
+    margin: 0;
+    color: gray;
+    transition: .3s;
+}
+#sec9 .main >div:hover .p2{
+    color: #ff7415;
+    transition: 1s;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+#sec10{
+    position: relative;
+    padding: 30px 0;
+    background-color: #ffd8bc;
+}
+#sec10 .title{
+    position: relative;
+}
+#sec10 .title-p1{
+    font-weight: bold;
+    text-align: center;
+    margin:0;
+    font-size: 50px;
+    color:#7e4d1e;
+}
+#sec10 .title span{
+    position: absolute;
+    bottom: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 3px;
+    background: #ff7415;
+    border-radius: 50%;
+}
+#sec10 .main{
+    width: 80%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    overflow: auto;
+    margin-top: 50px;
+}
+#sec10 .main > div{
+    width: 30%;
+    box-sizing: border-box;
+    float: left;
+    background: white;
+    border-radius: 10px;
+}
+#sec10 .main .two{
+    margin: 0 5%;
+}
+#sec10 .main .three{
+    float: right;
+}
+#sec10 .main img{
+    width: 100%;
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+}
+#sec10 .main .def{
+    color: gray;
+    padding: 10px 0;
+}
+#sec10 .main .def span{
+    padding-left: 15px;
+}
+#sec10 .main .def span i{
+    color: #ff7415;
+}
+#sec10 .main .x{
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 0 15px;
+}
+#sec10 .main p i{
+    color: #ff7415;
+    padding-left: 15px;
+}
+#sec10 .main button{
+    margin: 25px 0;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background: #ff7415;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+.foot{
+    width: 100%;
+    height: 40vh;
+    background: url(image/back1.jfif);
+    background-size: cover;
+    position: relative;
+}
+.foot::after{
+    position:absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #000000b5;
+    top: 0;
+}
+.foot .out{
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    padding: 20px 0 0 0;
+}
+.foot .out img{
+    width: 110px;
+    margin: 10px;
+}
+.foot .out div{
+    padding: 20px 0 10px 0;
+}
+.foot .out i{
+    color: #ff7415;
+    font-size: 18px;
+    padding: 7px;
+    background: black;
+    border-radius: 9px;
+    cursor: pointer;
+}
+.foot .out p{
+    color: white;
+    font-size: small;
+}
